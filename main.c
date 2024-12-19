@@ -15,8 +15,7 @@
 int
 main (int argc, char *argv[])
 {
-  GtkWidget *b_mainwindow;
-
+  GtkWidget *gestion_reservation;
 
 #ifdef ENABLE_NLS
   bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
@@ -34,8 +33,8 @@ main (int argc, char *argv[])
    * (except popup menus), just so that you see something after building
    * the project. Delete any components that you don't want shown initially.
    */
-  b_mainwindow = create_b_mainwindow ();
-  gtk_widget_show (b_mainwindow);
+  gestion_reservation = create_gestion_reservation ();
+  gtk_widget_show (gestion_reservation);
 
   gtk_main ();
   return 0;
